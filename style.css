@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;  
+}
+
+.up {
+    height: 58%;
+    width: 100%;
+    background-color: beige;
+}
+
+.up img {
+    width: 100%;
+    height: 100%;
+}
+
+.down {
+    height: 42%;
+    background-image: url(assets/941723.jpg);
+    display: flex;
+    flex-direction: row;
+}
+
+.down-droit {
+    background-color: rgba(18, 24, 78, 0.699);
+    height: 100%;
+    width: 65%;
+    
+}
+
+.down-droit span {
+    color: white;
+    margin: 20px;
+    font-size: 1.5em;
+}
+
+.down-droit .ddspan {
+    margin: 3%;
+}
+
+.down-gauche {
+    height: 100%;
+    width: 35%;
+    background-color: rgb(52, 162, 212);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.direction {
+    background-color: blue;
+    width: 73%;
+    height: 48%; 
+    margin-top: 5px;
+    border-radius: 15px;
+}
+
+.first-line, .second-line, .third-line {
+    display: flex;
+    flex-direction: row;
+    height: 33%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4%;
+    
+}
+
+button:disabled {
+    opacity: 0.2 !important; /* Réduit l'opacité du bouton */
+    cursor: not-allowed !important; /* Change le curseur en "non autorisé" */
+  }
+
+button {
+    width: 2.2em;
+    height: 2.2em;
+    font-weight: bolder;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+/* button {
+    width: 10%;
+    max-width: 100px; 
+    height: 5%;
+    font-weight: bolder;
+    font-size: 1.1em;
+    cursor: pointer;
+} */
+
+
+.boussole {
+    width: 60%;
+    height: 46%;
+    margin-top: 2%;
+}
+
+.boussole img {
+    width: 75%;
+    height: 100%;
+    margin-left: 30px;
+}
+
+@media (max-width: 780px) {
+    .down {
+        flex-direction: column-reverse;
+    }
+
+    .down-droit {
+        height: 30%;
+        width: 100%;
+    }
+
+    .down-gauche {
+        height: 70%;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .direction {
+        width: 60%;
+        height: 85%; 
+    }
+/* 
+    button {
+        width: 2.3em;
+        height: 2.3em;
+        font-weight: bolder;
+        font-size: 1.2em;
+        margin-top: 1.2%;
+    } */
+
+    button {
+        width: 15%;
+        height: 3%;
+    }
+
+    .boussole {
+        width: 30%;
+        height: 47%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    body {
+        background: linear-gradient(0deg, rgba(19,96,97,1) 15%, rgba(12,39,126,1) 100%);
+    }
+    
+    .container {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .direction {
+        height: 50%; 
+        margin-top: 4px;
+    }
+    
+    .first-line, .second-line, .third-line {
+        height: 30%;
+        padding: 3%;
+        
+    }
+
+}
